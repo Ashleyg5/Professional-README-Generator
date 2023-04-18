@@ -36,7 +36,7 @@ const questions = [
     {
         type: `list`,
         message: `Please select the license desired:`,
-        choices: [`MIT`, `Apache`, `GPL`],
+        choices: [`MIT`, `Apache`, `GPL`, `BSD`, `CDDL`, `EPL`, `Ms-PL`],
         name: `license`
     },
     {
@@ -53,16 +53,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fileName = `${data.name}.md`;
+    fileName = `${data.title}.md`;
     fs.writeFile(fileName, JSON.stringify(data, null, `/t`), (err) =>
     err ? console.log(err) : console.log(`Success!`)
     );
-    generateMarkdown();
+   
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer .prompt(questions) .then(writeToFile)
+    inquirer .prompt(questions) .then(generateMarkdown)
   
 }
 
@@ -72,3 +72,6 @@ function init() {
 
 // Function call to initialize app
 init();
+
+
+module.exports = writeToFile;
