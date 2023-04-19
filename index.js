@@ -51,26 +51,24 @@ const questions = [
     }
 ]; 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fileName = `${data.title}.md`;
-    fs.writeFile(fileName, JSON.stringify(data, null, `/t`), (err) =>
+
+function writeToFile(data) {
+    const fileName = `./output/README.md`;
+    fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log(`Success!`)
     );
    
 }
 
-// TODO: Create a function to initialize app
+
 function init() {
-    inquirer .prompt(questions) .then(generateMarkdown)
+    inquirer .prompt(questions) 
+    .then((data) => {
+        writeToFile(generateMarkdown(data))
+    })
   
 }
 
-
-//inquirer goes in here. prompt question array will be arguement
-//.then call back function that uses generatmarkdown as data source, pass data to markdown using spread operator 
-
-// Function call to initialize app
 init();
 
 

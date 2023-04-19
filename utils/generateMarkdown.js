@@ -1,31 +1,38 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 
-const writeToFile = require("..");
-
-
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return `https://img.shields.io/badge/license-${license}-blue`
-  //this will use data passed form generatemarkdown function. logic gate to make sure a license was chosen
- 
+  if (license === null){
+    license = '';
+  } else {
+    return `![License: ${license}](https://img.shields.io/badge/license-${license}-blue)`}
+
+  
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
-
-  //this will use data passed from generatemarkdown function logic gate to make sure a license 
+  if (license === null){
+    license = '';
+  } else {
+    return `[License](#license)`
+  }
+ 
+  
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(title, description, installation, usage, contribution, license, test, username, email) {
+function renderLicenseSection(license) {
+  if (license === null){
+    license = '';
+  } else {
+    return ` ## License`
+  }
+  
+ }
+
+
+function generateMarkdown({title, description, installation, usage, contribution, license, test, username, email}) {
   return `
   # ${title}
-
+  ${renderLicenseBadge(license)}
   ## Description
   
   ${description}
@@ -35,7 +42,7 @@ function generateMarkdown(title, description, installation, usage, contribution,
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
-  - [License](#license)
+  - ${renderLicenseLink(license)}
   
   ## Installation
   
@@ -45,7 +52,7 @@ function generateMarkdown(title, description, installation, usage, contribution,
   
   ${usage}
   
-  ## License
+  ${renderLicenseSection(license)}
   
   ${license}
   
@@ -63,9 +70,5 @@ function generateMarkdown(title, description, installation, usage, contribution,
   
   }
 
-  function license (license) {
-    renderLicenseBadge(license);
-  //license functions in here passing data to the functions called licenseFunction(data.license)
-}
-license();
+
 module.exports = generateMarkdown;
