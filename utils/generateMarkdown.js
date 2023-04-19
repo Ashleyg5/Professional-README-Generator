@@ -2,6 +2,7 @@
 
 const writeToFile = require("..");
 
+
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   return `https://img.shields.io/badge/license-${license}-blue`
@@ -21,16 +22,50 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(title, description, installation, usage, contribution, license, test, username, email) {
+  return `
+  # ${title}
+
+  ## Description
   
-  console.log(data)
-  return `# ${data.title}`, `## ${data.description}`, `## ${data.installation}`, `## ${data.usage}`, `## ${data.contribution}`, `## ${data.test}`, ` ## ${data.license}`, `## ${data.username}`,`## ${data.email}`;
+  ${description}
+  
+  ## Table of Contents 
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  
+  ## Installation
+  
+  ${installation}
+  
+  ## Usage
+  
+  ${usage}
+  
+  ## License
+  
+  ${license}
+  
+  ## How to Contribute
+  
+  ${contribution}
+  
+  ## Tests
+  
+  ${test}
+  
+  ## Questions
+  ${username}
+  ${email}`
+  
   }
-  function license (data) {
-    const license = data.license;
+
+  function license (license) {
     renderLicenseBadge(license);
-    writeToFile();
   //license functions in here passing data to the functions called licenseFunction(data.license)
 }
-
+license();
 module.exports = generateMarkdown;
