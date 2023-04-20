@@ -1,10 +1,12 @@
 
-  # Countdown
-  ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+  # d
+
+  ## Badge
+  [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/MIT/)
 
   ## Description
   
-  Timer 
+  d
   
 
   ## Table of Contents 
@@ -20,38 +22,38 @@
 
   ## Installation
   
-  
+  d
   
 
   ## Usage
   
-  Click Start
+  d
 
 
   ## Credits
 
-  Keely, Mike
+  d
   
 
-   ## License
-  
-  MIT
-  
+  ## License
+
+   Read more about MIT by clicking  [here.](https://opensource.org/license/MIT/)
+
 
   ## Contributions
   
-  
+  d
   
 
   ## Tests
   
-  
+  d
   
   
   ## Questions
 
   If you have any questions and would like to reach me directly, please see below:
 
-  Github: [Ashleyg5](https://github.com/Ashleyg5)
+  Github: [d](https://github.com/d)
 
-  Email: Ashleygiraldo5@gmail.com
+  Email: d
