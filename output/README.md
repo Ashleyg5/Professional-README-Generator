@@ -1,12 +1,12 @@
 
-  # d
+  # Hogwarts Legacy
 
   ## Badge
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/MIT/)
 
   ## Description
   
-  d
+  This will provide tutorials, cheats, tips, tricks, and articles regarding Hogwarts Legacy game. 
   
 
   ## Table of Contents 
@@ -22,17 +22,17 @@
 
   ## Installation
   
-  d
+  Paste link url to browser and click "enter"
   
 
   ## Usage
   
-  d
+  Click "begin", enter your Hogwarts player name, and enjoy! The nav bar will guide you to all functions of this website including tutorials for flying, tips for fights, and articles regarding bosses. 
 
 
   ## Credits
 
-  d
+  None
   
 
   ## License
@@ -42,18 +42,18 @@
 
   ## Contributions
   
-  d
+  I am not accepting any contributors at this time.
   
 
   ## Tests
   
-  d
+  None
   
   
   ## Questions
 
   If you have any questions and would like to reach me directly, please see below:
 
-  Github: [d](https://github.com/d)
+  Github: [Ashleyg5](https://github.com/Ashleyg5)
 
-  Email: d
+  Email: Ashleygiraldo5@hotmail.com
