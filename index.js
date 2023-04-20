@@ -1,7 +1,7 @@
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+
 const questions = [
     {
         type: `input`,
@@ -10,27 +10,32 @@ const questions = [
     },
     {
         type: `input`,
-        message: `Please enter a description for your project.`,
+        message: `Please enter a description for your project:`,
         name: `description`
     },
     {
         type: `input`,
-        message: `Please enter any installation instructions.`,
+        message: `Please enter any installation instructions:`,
         name: `installation`
     },
     {
         type: `input`,
-        message: `Please enter any usage information.`,
+        message: `Please enter any usage information:`,
         name: `usage`
     },
     {
         type: `input`,
-        message: `Please enter any contribution guidelines.`,
+        message: `Please enter any collaborators:`,
+        name: `credits`
+    },
+    {
+        type: `input`,
+        message: `Please enter any contribution guidelines:`,
         name: `contribution`
     },
     {
         type: `input`,
-        message: `Please enter any test instructions.`,
+        message: `Please enter any test instructions:`,
         name: `test`
     },
     {
@@ -70,6 +75,3 @@ function init() {
 }
 
 init();
-
-
-module.exports = writeToFile;
