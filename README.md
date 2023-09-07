@@ -28,7 +28,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Description
  
-This is challenge 9 of the bootcamp. I was tasked with creating a readme document generator using javascript, node, and npm. The user will be able to open the terminal and input 'node index' and then will be met with a prompt of questions (project title, description, etc). Once the user finishes all the prompts, they will be met with a log "success!" unless there is an error. The user will then see the readme generate inside the "output" folder. When the preview for the readme is opened, the user will see all the information inputted from the prompt inside the readme. Along with the sections of information, the user will see a clickable badge for their license appear at the top, as well as a link in the "license" section where they can read the documentation for their chosen license. 
+I was tasked with creating a readme document generator using JavaScript, node, and npm. The user will be able to open the terminal and input 'node index' and then will be met with a prompt of questions (project title, description, etc). Once the user finishes all the prompts, they will be met with a log "success!" unless there is an error. The user will then see the readme generated inside the "output" folder. When the preview for the readme is opened, the user will see all the information inputted from the prompt inside the readme. Along with the sections of information, the user will see a clickable badge for their license appear at the top, as well as a link in the "license" section where they can read the documentation for their chosen license. 
 
 ## Usage
 
